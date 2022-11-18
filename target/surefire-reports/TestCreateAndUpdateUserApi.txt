@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: TestCreateAndUpdateUserApi
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.476 s - in TestCreateAndUpdateUserApi

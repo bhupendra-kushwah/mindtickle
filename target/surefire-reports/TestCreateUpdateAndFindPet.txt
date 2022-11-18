@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestCreateUpdateAndFindPet
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 1.322 s <<< FAILURE! - in TestCreateUpdateAndFindPet
+testUpdatePet(TestCreateUpdateAndFindPet)  Time elapsed: 0.312 s  <<< FAILURE!
+java.lang.AssertionError: Pet is not updated 
+	at TestCreateUpdateAndFindPet.testUpdatePet(TestCreateUpdateAndFindPet.java:89)
+
+testCreatePet(TestCreateUpdateAndFindPet)  Time elapsed: 0.348 s  <<< FAILURE!
+java.lang.AssertionError: Pet is not created 
+	at TestCreateUpdateAndFindPet.testCreatePet(TestCreateUpdateAndFindPet.java:59)
+
+testFindPetByStatus(TestCreateUpdateAndFindPet)  Time elapsed: 0.357 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.mindtickle.petstore.api.pojo.pet.PetsList.getPetList()" because "listOfPets" is null
+	at TestCreateUpdateAndFindPet.testFindPetByStatus(TestCreateUpdateAndFindPet.java:100)
+

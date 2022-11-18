@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestCreateUpdateAndFindPet" time="1.322" tests="3" errors="1" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\rakhi\IdeaProjects\Mindtickle\target\test-classes;C:\Users\rakhi\IdeaProjects\Mindtickle\target\classes;C:\Users\rakhi\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\rakhi\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\rakhi\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\rakhi\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\rakhi\.m2\repository\org\apache\commons\commons-lang3\3.7\commons-lang3-3.7.jar;C:\Users\rakhi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\rakhi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\rakhi\.m2\repository\com\vimalselvam\cucumber-extentsreport\2.0.5\cucumber-extentsreport-2.0.5.jar;C:\Users\rakhi\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\rakhi\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\rakhi\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\rakhi\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\rakhi\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\rakhi\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\rakhi\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\rakhi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\rakhi\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\rakhi\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\rakhi\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\rakhi\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\rakhi\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\rakhi\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\rakhi\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\rakhi\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\rakhi\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\rakhi\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\rakhi\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\rakhi\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\rakhi\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\rakhi\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\rakhi\.m2\repository\org\everit\json\org.everit.json.schema\1.5.1\org.everit.json.schema-1.5.1.jar;C:\Users\rakhi\.m2\repository\org\json\json\20160810\json-20160810.jar;C:\Users\rakhi\.m2\repository\commons-validator\commons-validator\1.5.1\commons-validator-1.5.1.jar;C:\Users\rakhi\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\rakhi\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\rakhi\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\rakhi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\rakhi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.5\jackson-core-2.9.5.jar;C:\Users\rakhi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.5\jackson-databind-2.9.5.jar;C:\Users\rakhi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\plugins\maven-surefire-report-plugin\3.0.0-M7\maven-surefire-report-plugin-3.0.0-M7.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\surefire\surefire-report-parser\3.0.0-M7\surefire-report-parser-3.0.0-M7.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0-M7\surefire-logger-api-3.0.0-M7.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\rakhi\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.1.0\maven-reporting-api-3.1.0.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\3.1.0\maven-reporting-impl-3.1.0.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.11.1\doxia-sink-api-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-logging-api\1.11.1\doxia-logging-api-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.11.1\doxia-decoration-model-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-component-annotations\2.0.0\plexus-component-annotations-2.0.0.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-core\1.11.1\doxia-core-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-container-default\2.1.0\plexus-container-default-2.1.0.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.6.0\plexus-classworlds-2.6.0.jar;C:\Users\rakhi\.m2\repository\org\apache\xbean\xbean-reflect\3.7\xbean-reflect-3.7.jar;C:\Users\rakhi\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar;C:\Users\rakhi\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.11.1\doxia-site-renderer-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-skin-model\1.11.1\doxia-skin-model-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.11.1\doxia-module-xhtml-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml5\1.11.1\doxia-module-xhtml5-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-10\plexus-i18n-1.0-beta-10.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-velocity\1.2\plexus-velocity-1.2.jar;C:\Users\rakhi\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\rakhi\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\rakhi\.m2\repository\org\apache\velocity\velocity-tools\2.0\velocity-tools-2.0.jar;C:\Users\rakhi\.m2\repository\commons-chain\commons-chain\1.1\commons-chain-1.1.jar;C:\Users\rakhi\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar;C:\Users\rakhi\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.24\plexus-utils-3.0.24.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Users\rakhi\AppData\Local\Temp\surefire13934294273951821391\surefirebooter9827606025199067922.jar C:\Users\rakhi\AppData\Local\Temp\surefire13934294273951821391 2022-11-18T23-29-37_700-jvmRun1 surefire6697505752324310410tmp surefire_01150266250387247991tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\rakhi\IdeaProjects\Mindtickle\target\test-classes;C:\Users\rakhi\IdeaProjects\Mindtickle\target\classes;C:\Users\rakhi\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\rakhi\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\rakhi\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\rakhi\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\rakhi\.m2\repository\org\apache\commons\commons-lang3\3.7\commons-lang3-3.7.jar;C:\Users\rakhi\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\rakhi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\rakhi\.m2\repository\com\vimalselvam\cucumber-extentsreport\2.0.5\cucumber-extentsreport-2.0.5.jar;C:\Users\rakhi\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\rakhi\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\rakhi\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\rakhi\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\rakhi\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\rakhi\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\rakhi\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\rakhi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\rakhi\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\rakhi\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\rakhi\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\rakhi\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\rakhi\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\rakhi\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\rakhi\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\rakhi\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\rakhi\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\rakhi\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\rakhi\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\rakhi\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\rakhi\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\rakhi\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\rakhi\.m2\repository\org\everit\json\org.everit.json.schema\1.5.1\org.everit.json.schema-1.5.1.jar;C:\Users\rakhi\.m2\repository\org\json\json\20160810\json-20160810.jar;C:\Users\rakhi\.m2\repository\commons-validator\commons-validator\1.5.1\commons-validator-1.5.1.jar;C:\Users\rakhi\.m2\repository\commons-beanutils\commons-beanutils\1.9.2\commons-beanutils-1.9.2.jar;C:\Users\rakhi\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\rakhi\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\rakhi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\rakhi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.5\jackson-core-2.9.5.jar;C:\Users\rakhi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.5\jackson-databind-2.9.5.jar;C:\Users\rakhi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\plugins\maven-surefire-report-plugin\3.0.0-M7\maven-surefire-report-plugin-3.0.0-M7.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\surefire\surefire-report-parser\3.0.0-M7\surefire-report-parser-3.0.0-M7.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0-M7\surefire-logger-api-3.0.0-M7.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\rakhi\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.1.0\maven-reporting-api-3.1.0.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\3.1.0\maven-reporting-impl-3.1.0.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.11.1\doxia-sink-api-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-logging-api\1.11.1\doxia-logging-api-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.11.1\doxia-decoration-model-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-component-annotations\2.0.0\plexus-component-annotations-2.0.0.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-core\1.11.1\doxia-core-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-container-default\2.1.0\plexus-container-default-2.1.0.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.6.0\plexus-classworlds-2.6.0.jar;C:\Users\rakhi\.m2\repository\org\apache\xbean\xbean-reflect\3.7\xbean-reflect-3.7.jar;C:\Users\rakhi\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar;C:\Users\rakhi\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.11.1\doxia-site-renderer-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-skin-model\1.11.1\doxia-skin-model-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.11.1\doxia-module-xhtml-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml5\1.11.1\doxia-module-xhtml5-1.11.1.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-10\plexus-i18n-1.0-beta-10.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-velocity\1.2\plexus-velocity-1.2.jar;C:\Users\rakhi\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\rakhi\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\rakhi\.m2\repository\org\apache\velocity\velocity-tools\2.0\velocity-tools-2.0.jar;C:\Users\rakhi\.m2\repository\commons-chain\commons-chain\1.1\commons-chain-1.1.jar;C:\Users\rakhi\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar;C:\Users\rakhi\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\rakhi\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.24\plexus-utils-3.0.24.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\rakhi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\rakhi\IdeaProjects\Mindtickle"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\rakhi\AppData\Local\Temp\surefire13934294273951821391\surefirebooter9827606025199067922.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.1+10-21"/>
+    <property name="user.name" value="rakhi"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\rakhi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\rakhi\AppData\Local\Temp\"/>
+    <property name="java.version" value="19.0.1"/>
+    <property name="user.dir" value="C:\Users\rakhi\IdeaProjects\Mindtickle"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-19\bin;C:\Program Files\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;C:\Program Files\Git\cmd;C:\Users\rakhi\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-19\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.3\bin;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.1+10-21"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="testUpdatePet" classname="TestCreateUpdateAndFindPet" time="0.312">
+    <failure message="Pet is not updated " type="java.lang.AssertionError">java.lang.AssertionError: Pet is not updated 
+	at TestCreateUpdateAndFindPet.testUpdatePet(TestCreateUpdateAndFindPet.java:89)
+</failure>
+  </testcase>
+  <testcase name="testCreatePet" classname="TestCreateUpdateAndFindPet" time="0.348">
+    <failure message="Pet is not created " type="java.lang.AssertionError">java.lang.AssertionError: Pet is not created 
+	at TestCreateUpdateAndFindPet.testCreatePet(TestCreateUpdateAndFindPet.java:59)
+</failure>
+  </testcase>
+  <testcase name="testFindPetByStatus" classname="TestCreateUpdateAndFindPet" time="0.357">
+    <error message="Cannot invoke &quot;org.mindtickle.petstore.api.pojo.pet.PetsList.getPetList()&quot; because &quot;listOfPets&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.mindtickle.petstore.api.pojo.pet.PetsList.getPetList()" because "listOfPets" is null
+	at TestCreateUpdateAndFindPet.testFindPetByStatus(TestCreateUpdateAndFindPet.java:100)
+</error>
+    <system-err><![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `org.mindtickle.petstore.api.pojo.pet.PetsList` out of START_ARRAY token
+ at [Source: (String)"[{"id":12,"category":{"id":0,"name":"dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9,"category":{"id":0,"name":"cats"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":3096227,"category":{"id":39478863,"name":"et exercitation consectetur enim"},"name":"doggie","photoUrls":["ut","sed dolore laborum"],"tags":[{"id":-38030612,"name":"in dolore"},{"id":5552138,"name":"sunt"}],"status":"sold"},{"id":17,"name":"Special_char_owner_"[truncated 554 chars]; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1342)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1138)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1092)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray(BeanDeserializerBase.java:1454)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:161)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2992)
+	at org.mindtickle.petstore.utils.json.JsonSerializationAndDeserialization.deserializeJson(JsonSerializationAndDeserialization.java:20)
+	at org.mindtickle.petstore.utils.json.JsonSerializationAndDeserialization.getApiJsonResponseBeen(JsonSerializationAndDeserialization.java:47)
+	at org.mindtickle.petstore.api.pet.FindPetApi.validatePetFound(FindPetApi.java:39)
+	at TestCreateUpdateAndFindPet.testFindPetByStatus(TestCreateUpdateAndFindPet.java:100)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]></system-err>
+  </testcase>
+</testsuite>
